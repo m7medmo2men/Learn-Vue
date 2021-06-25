@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Growler</title>
+    <body>
+        <div id="growler">
+            <h2>{{appName}}</h2>
+            <h2 v-text="appName"></h2>
+            <h2 v-html="appName" v-bind:src="appLogo" v-bind:style="{color: appNameColor}" v-bind:style="{appStyle}" v-bind:style="[arr1, arr2]"></h2>
+        </div>
+        <script type="text/javascript" src="https://unpkg.com/vue"></script>
+        <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script type="text/javascript">
+            var growler = new Vue({
+                el: '#growler',
+                data: {
+                    appName: 'Growler'
+                }
+            })
+        </script>
+    </body>
+</head>
